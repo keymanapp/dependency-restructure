@@ -7,8 +7,13 @@
   "module": "./index.js",
   "source": "./index.js",
   "exports": {
-    "import": "./index.js",
-    "require": "./dist/main.cjs"
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      },
+      "require": "./dist/main.cjs"
+    }
   },
   "targets": {
     "module": false
